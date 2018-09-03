@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <!-- <img src="img/calendar.svg" alt="Логотип Седона">
@@ -35,6 +37,7 @@
 				<li><a href="info.html">Гостиницы</a></li>
 			</ul>
 		</nav>
+		<img src="img/polygon.jpg" alt="images">
 	</header>
 
 	<main>
@@ -44,62 +47,88 @@
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		</header>
 
+		<div class="feature">
 			<section class="feature1">
 				<h2>Настоящий городок</h2>
-					<span>№1</span>
+					<span>— №1 —</span>
 					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+					<img src="img/Layer 10.jpg" alt="Городок">
 			</section>
 			<section class="feature2">
 				<div class="feature-item1">
+					<img src="img/icon-1.svg" alt="Жилье">
 					<h2>Жильё</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 				</div>
 				<div class="feature-item2">
+					<img src="img/icon-2.svg" alt="Жилье">
 					<h2>Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="feature-item3">
+					<img src="img/icon-3.svg" alt="Жилье">
 					<h2>Сувениры</h2>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</section>
 
 			<section class="feature3">
+				<img src="img/Layer 5.jpg" alt="Мост">
 				<h2>Там есть мост дьявола</h2>
-					<span>№2</span>
+				<span>— №2 —</span>
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</section>
 			<section class="feature4">
 				<div class="feature-item4">
 					<h2>Небольшая площадь</h2>
-						<span>№3</span>
+						<span>— №3 —</span>
 						<p>Все достопримечательности находятся очень близко</p>
 				</div>
 				<div class="feature-item5">
 					<h2>Красивая дорога</h2>
-						<span>№4</span>
+						<span>— №4 —</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</div>
 				<div class="feature-item6">
 					<h2>Мало туристов</h2>
-						<span>№5</span>
+						<span>— №5 —</span>
 						<p>Большинство едет в гранд каньон и толпится там</p>
 					</div>
 			</section>
+		</div>
 
 			<section class="appointment">
 				<header class="appointment-header">
-				<h2>Заинтересовались</h2>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<h2>Заинтересовались?</h2>
+					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<a href="contacts.html" class="button">Поиск гостиницы в Седоне</a>
 				</header>
-				<a href="contacts.html" class="button">Поиск гостиницы в Седоне</a>
 			</section>
-		<div class="search"></div>	
+		<div class="search">
+			<form action="#" method="get">
+				<div class="down">
+					<label for="down">Дата заезда</label>
+					<input type="date" name="down" id="down">
+				</div>
+				<div class="up">	
+					<label for="up">Дата выезда</label>
+					<input type="date" name="up" id="up">
+				</div>
+					<label for="old">Взрослые:</label>
+					<input type="number" name="old" id="old" value="2">
+					<label for="child">Дети:</label>
+					<input type="number" name="child" id="child" value="0">	
+				<div>
+					<button name="form" type="submit">Найти</button>
+				</div>	
+			</form>
+		</div>	
 	</main>
-
+	<div class="map">
+		<img src="img/map.jpg" alt="Месторасположение">
 		<footer class="main-footer">
 			<a href="#">#visitSEDONA</a>
-			<ul>
+			<ul class="social-button">
 				<li><a href="#" class="social-button">Twitter</a></li>
 				<li><a href="#" class="social-button">Facebook</a></li>
 				<li><a href="#" class="social-button">YouTube</a></li>
@@ -108,6 +137,6 @@
        			<span>Website by</span><a href="#"></a>
       		</address>
 		</footer>
-
+	</div>
   </body>
 </html>
