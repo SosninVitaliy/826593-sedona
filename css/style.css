@@ -1,22 +1,63 @@
 body {
+	background-color: #f2f2f2;
+}
+
+.sedona {
 	margin: 0;
 	padding: 0;
 
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
+	line-height: 21px;
+	font-weight: 400;
 	color: #000;
 	text-transform: uppercase;
-	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 a {
 	text-decoration: none;
 }
 
+.main-header-logo img {
+	width: 140px;
+	height: 72px;
+	position: absolute;
+	margin: 0 530px;
+}
+
+.intro-welcome img {
+	position: absolute;
+	width: 459px;
+	height: 353px;
+	margin: 133px 370px;
+}
+
+
 .main-navigation {
 	background-color: #fff;
+	height: 56px;
+	position: absolute;
+	width: 1200px;
+}
+
+.site-navigation li {
+	float: left;
+}
+
+.site-navigation li:nth-child(1) {
+	padding-left: 28px;
+	padding-right: 147px;
+}
+
+.site-navigation li:nth-child(2) {
+	padding-right: 390px;
+}
+
+.site-navigation li:nth-child(3) {
+	padding-right: 160px;
 }
 
 .site-navigation,
@@ -26,6 +67,8 @@ a {
 
 .site-navigation a {
 	color: #000;
+	line-height: 26px;
+	font-weight: 700;
 }
 
 .site-navigation a:hover {
@@ -46,8 +89,15 @@ h1 {
 }
 
 .highlight p {	
-	font-weight: 400;
 	color: #333;
+	padding-top: 35px;
+	padding-bottom: 55px;
+	line-height: 26px;
+}
+
+.highlight {
+	text-align: center;
+	padding-top: 60px;
 }
 
 h2 {
@@ -55,52 +105,102 @@ h2 {
 	line-height: 21px;
 }
 
-.feature p,
-.feature span {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
 
+.feature-right {
+	float: left;
+	width: 400px;
+	height: 256px;
+	text-align: center;
 }
 
-.feature1 {
+.feature-left {
+	float: right;
+	width: 400px;
+	height: 256px;
+	text-align: center;
+}
+
+/*---------------*/
+
+.features {
 	background-color: #81b3d2;
 	color: #fff;
 }
 
-.feature3 {
-	background-color: #81b3d2;
-	color: #fff;
+.feature-svg {
+	width: 300px;
+}
+
+.feature2 h2 {
+	padding-top: 25px;
+}
+
+.feature2 p {
+	padding-top: 25px;
+	padding-bottom: 85px;
 }
 
 .feature2 {
 	background-color: #fff;
+	padding-top: 60px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*вторая часть флексов*/
+
+.feature-number {
+	width: 270px;
+}
+
+.feature4 h2 {
+	padding-top: 45px;
+}
+
+.feature4 span {
+	padding-top: 25px;
+}
+
+.feature4 p {
+	padding-top: 25px;
+	padding-bottom: 60px;
 }
 
 .feature4 {
 	background-color: #eeeeee;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
+
+/*Заинтересовались*/
 
 .appointment {
 	background-color: #fff;
+	text-align: center;
 }
 
 .appointment-header h2 {
 	font-size: 30px; 
 	line-height: 36px;
+	padding-top: 50px;
 }
 
 .appointment-header p {
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 400;
+	padding-top: 30px;
 }
+
+/*кнопка*/
 
 .button {
 	font-size: 21px;
 	line-height: 26px;
 	color: #fff;
 	background-color: #766357;
+	padding: 30px 140px;
 }
 
 .appointment-header a:hover {
@@ -110,6 +210,14 @@ h2 {
 .appointment-header a:active {
 	background-color: #604e43;
 	color: #928a85;
+}
+
+/*форма*/
+
+.map img {
+	z-index: 100;
+	position: absolute;
+	padding-top: 30px;
 }
 
 input {
@@ -140,8 +248,27 @@ button {
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
+
 }
 
-footer {
+.main-footer {
+	z-index: 200;
+	position: absolute;
+	margin-top: 505px;
+	display: flex;
+	width: 1200px;
+	height: 120px;
 	background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.visitsedona {
+
+}
+
+.social-button {
+
+}
+
+.copyright {
+
 }
