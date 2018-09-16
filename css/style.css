@@ -325,7 +325,7 @@ fieldset {
 .search2 {
   display: flex;
   align-items: center;
-  padding: 30px 75px;
+  padding: 25px 75px;
   border-bottom: 2px solid #f2f2f2;
 }
 
@@ -394,7 +394,7 @@ fieldset {
 
 
 .desc {
-  width: 230px;
+  width: 300px;
 }
 
 
@@ -403,7 +403,7 @@ fieldset {
 }
 
 .filter-form1 {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .check input {
@@ -565,7 +565,7 @@ legend {
 
 .hotel {
   display: flex;
-  padding: 30px 70px;
+  padding: 25px 70px;
   border-bottom: 2px solid #f2f2f2;
 }
 
@@ -587,7 +587,7 @@ legend {
 }
 
 .button-blue {
-  padding: 7px 10px;
+  padding: 3px 15px;
   background-color: #81b3d2;
   font-weight: bold;
   line-height: 21px;
@@ -596,7 +596,7 @@ legend {
 }
 
 .button-gray {
-  padding: 7px 10px;
+  padding: 3px 15px;
   background-color: #766357;
   font-weight: bold;
   line-height: 21px;
@@ -607,6 +607,7 @@ legend {
   padding: 7px 10px;
   background-color: #f2f2f2;
   color: #333333;
+  line-height: 21px;
 }
 
 .hotel-picture {
@@ -633,7 +634,7 @@ legend {
   bottom: 0;
   left: 0;
   display: flex;
-  padding: 40px 80px;
+  padding: 20px 100px;
   width: 100%;
   vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.9);
