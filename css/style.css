@@ -121,17 +121,31 @@ h1 {
 .highlight p {
   color: #333;
   line-height: 26px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 50px;
 }
 
 h2 {
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.feature-desc p {
+  padding-top: 30px;
+  margin: 0;
 }
 
 .feature {
   display: flex;
   color: #fff;
   text-align: center;
+}
+
+.feature-feature {
+  padding-bottom: 50px;
 }
 
 .feature-desc {
@@ -150,6 +164,7 @@ h2 {
 
 .features-dark {
   background-color: #eeeeee;
+  padding-top: 30px;
 }
 
 .features-item {
@@ -157,6 +172,11 @@ h2 {
   padding: 40px;
   text-align: center;
 }
+
+.features-item p {
+  padding-bottom: 30px;
+}
+
 .feature-icon1 {
   padding-top: 100px;
   background: url('../img/icon-1.svg') 135px 20px no-repeat;
@@ -176,6 +196,16 @@ h2 {
   width: 565px;
   margin: 0 auto;
   text-align: center;
+}
+
+.appointment-header p {
+  padding-bottom: 50px;
+}
+
+.appointment-header h2 {
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 55px;
 }
 
 .map {
@@ -246,7 +276,7 @@ h2 {
   display: inline-block;
   width: 46px;
   height: 46px;
-  background: #81b3d2 url('../img/twitter.svg') 50% 50% no-repeat;
+  background: #81b3d2 url('../img/fb-icon.svg') 50% 50% no-repeat;
 }
 
 .social-youtube {
