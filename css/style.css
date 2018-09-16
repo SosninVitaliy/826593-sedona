@@ -24,7 +24,7 @@ body {
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
@@ -48,7 +48,7 @@ img {
 }
 
 .main-navigation {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 .site-navigation {
@@ -114,18 +114,18 @@ img {
 }
 
 h1 {
-	font-size: 21px;
-	line-height: 26px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .highlight p {
-	color: #333;
-	line-height: 26px;
+  color: #333;
+  line-height: 26px;
 }
 
 h2 {
-	font-size: 21px;
-	line-height: 21px;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .feature {
@@ -272,30 +272,30 @@ h2 {
 }
 
 .filter {
-	position: absolute;
+  position: absolute;
 }
 
 .type {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
 }
 
 .type span {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: 700;
-	padding-left: 70px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-left: 70px;
 }
 
 .type p {
-	padding-left: 50px;
+  padding-left: 50px;
 }
 
 .type li {
-	list-style: none;
-	display: inline-block;
-	padding-right: 30px;
+  list-style: none;
+  display: inline-block;
+  padding-right: 30px;
 }
 
 /*search*/
@@ -306,9 +306,8 @@ fieldset {
 
 .search {
   display: flex;
-  height: 220px;
+  min-height: 220px;
   padding: 25px 70px;
-
   background-image: url(../img/search.jpg);
 }
 
@@ -325,29 +324,74 @@ fieldset {
 
 .search2 {
   display: flex;
-  border-bottom: 2px solid #e5e5e5;
-}
-
-.search2-box {
+  align-items: center;
   padding: 30px 75px;
-  width: 1200px;
-  display: inline-block;
+  border-bottom: 2px solid #f2f2f2;
 }
 
-li {
+.control {
+  margin-left: auto;
+}
+
+.control a {
+ display: inline-block;
+ width: 10px;
+ height: 10px;
+ cursor: pointer;
+ margin-right: 10px;
+}
+.control path {
+  fill: blue;
+}
+
+.control a:hover path {
+  fill: black;
+}
+
+.control a:active path {
+  fill: red;
+}
+
+
+
+.search2 li {
   list-style: none;
 }
+.search2 span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 50px;
+}
 
+.sorting {
+  display: flex;
+  color: #81b3d2;
+}
+
+.sortings {
+  color: #cacaca;
+  border-bottom: 2px dotted #81b3d2;
+}
+
+.sorting p {
+  margin: 0;
+  margin-right: 50px;
+}
+.sorting-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.sorting-list li:not(:last-child) {
+  margin-right: 10px;
+}
 /*search3*/
 
 .amara {
     border-bottom: 2px solid #e5e5e5;
 }
 
-.article1 {
-  display: flex;
-  margin: 30px 70px;
-}
+
 
 .desc {
   width: 230px;
@@ -356,6 +400,26 @@ li {
 
 .rating {
 
+}
+
+.filter-form1 {
+  margin-right: 50px;
+}
+
+.check input {
+  display: none;
+}
+
+.check label {
+  display: block;
+  color: #fff;
+  padding: 10px 10px 10px 50px;
+  background: url('../img/checkbox-off.svg') 5px 5px no-repeat;
+  padding-bottom: 15px;
+}
+
+.check input:checked + label {
+  background-image: url('../img/checkbox-on.svg');
 }
 
 /*калькулятор*/
@@ -377,7 +441,7 @@ li {
 
 .price-controls {
   position: relative;
-  
+
   height: 36px;
   margin-bottom: 20px;
 
@@ -385,6 +449,11 @@ li {
 
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+
+legend {
+  color: #fff;
+  padding-bottom: 25px;
 }
 
 .price-controls::after {
@@ -494,6 +563,70 @@ li {
   background: #ffffff;
 }
 
+.hotel {
+  display: flex;
+  padding: 30px 70px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.hotel h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  line-height: 26px;
+}
+
+.dest-type {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+}
+
+.dest-type a {
+  color: #333333;
+}
+
+.button-blue {
+  padding: 7px 10px;
+  background-color: #81b3d2;
+  font-weight: bold;
+  line-height: 21px;
+  color: #fff;
+
+}
+
+.button-gray {
+  padding: 7px 10px;
+  background-color: #766357;
+  font-weight: bold;
+  line-height: 21px;
+  color: #fff;
+}
+
+.rating span {
+  padding: 7px 10px;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.hotel-picture {
+  margin-right: 20px;
+  width: 135px;
+  height: 90px;
+}
+.rating {
+  max-width: 200px;
+  margin-left: auto;
+}
+.rating-stars {
+  margin-bottom: 50px;
+}
+.rating-stars span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/star.svg') 0 0 no-repeat;
+}
 /*footer*/
 
 .main-footer-inner {
